@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  webdav:
+    container_name: nginxwebdav
+    image: dockrbyter/nginxextras
+    restart: always
+    volumes:
+      - $HOME/nginx/webdav/config/nginx.conf:/etc/nginx/conf.d/nginx-custom.conf:ro
+      - $HOME/nginx/webdav/content:/var/www/html/
+
+networks:
+  default:
+    external:
+      name: proxynet
+
+# Nginx WebDAV
