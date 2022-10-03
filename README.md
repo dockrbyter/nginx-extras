@@ -8,6 +8,10 @@ A Ningx Docker container with Nginx extras included. I've needed a WebDAV contai
 ## Content
 Based on the origanl Nginx image, just added 'apt-get install -y nginx-extras'. 
 
+## Repos
+Github: https://github.com/dockrbyter/nginx-extra
+Dockerhub: https://hub.docker.com/r/dockrbyter/nginxextras
+
 ---------------------------------------------------------------------------------------------
 
 ## How To
